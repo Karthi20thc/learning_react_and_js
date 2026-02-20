@@ -1,0 +1,49 @@
+/* css */
+
+/* using position */
+/* .parent-box {
+    border: 0.5px solid blue;
+    padding: 100px;
+
+    position: relative;
+}
+
+.child-box {
+    border: 0.5px solid red;
+    padding: 25px;
+    max-width: 100px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} */
+
+
+/* using flex */
+.parent-box {
+    border: 0.5px solid blue;
+    height: 100px;
+
+    display: flex;
+    /* y-axis*/
+    align-items: flex-end;
+    /* x-axis */
+    justify-content: flex-end;
+
+}
+
+.child-box {
+    border: 0.5px solid red;
+    height: 25px;
+    padding: 20px;
+    max-width: 100px;
+
+}
+
+
+/*! Your flex version works only if:
+
+* Parent has height
+* OR enough padding (like you used)
+
+If parent height is small, you won’t see vertical alignment effect. */
