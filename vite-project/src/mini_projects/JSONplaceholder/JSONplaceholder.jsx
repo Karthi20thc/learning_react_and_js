@@ -23,7 +23,7 @@ const JsonPlaceholder = () => {
     }, []);
 
     return (
-        <div>
+        <React.Fragment>
             {apiresult?.map((ele, index) => {
                 return (
                     <div style={{ display: "flex", gap: "10px" }}>
@@ -34,7 +34,7 @@ const JsonPlaceholder = () => {
                     </div>
                 );
             })}
-        </div>
+        </React.Fragment>
     );
 };
 
