@@ -1,0 +1,38 @@
+/* css */
+
+.dropdown {
+    width: 100%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.dropdown-btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background: white;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+/* 
+   This rule targets the element with class "dropdown-content"
+   ONLY when its parent element (.dropdown) also has the class "active".
+
+   Meaning:
+   - Normally, .dropdown-content is hidden (display: none).
+   - When we add the "active" class to the parent (.dropdown),
+     this rule makes the dropdown visible (display: block).
+
+   This is commonly used for toggling dropdown menus using JavaScript
+   by adding/removing the "active" class.
+*/
+.dropdown.active .dropdown-content {
+    display: block;
+}
