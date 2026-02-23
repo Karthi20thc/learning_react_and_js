@@ -50,7 +50,7 @@ const ConvertDataTOElementsEX2 = (skill) => {
 
     optionDiv.innerHTML = `
         <label>
-            <input type="checkbox" value="${skill.id}"> ${skill.name}
+            <input type="checkbox" value="${skill.name}"> ${skill.name}
         </label>
     `;
 
