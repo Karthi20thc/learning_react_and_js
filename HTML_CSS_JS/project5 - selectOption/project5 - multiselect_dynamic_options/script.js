@@ -8,6 +8,7 @@ const skills = [
 const dropdown = document.querySelector(".dropdown");
 const dropdownContent = document.querySelector(".dropdown-content");
 const btn = document.querySelector(".dropdown-btn");
+const fragment = document.createDocumentFragment();
 
 
 // Handlers
@@ -42,7 +43,22 @@ const ConvertDataTOElements = (skill) => {
 
 };
 
+const ConvertDataTOElementsEX2 = (skill) => {
 
+    const optionDiv = document.createElement("div");
+    optionDiv.className = "option";
+
+    optionDiv.innerHTML = `
+        <label>
+            <input type="checkbox" value="${skill.id}"> ${skill.name}
+        </label>
+    `;
+
+    fragment.appendChild(optionDiv);
+
+};
+// !should not append here
+// dropdownContent.appendChild(fragment);
 
 
 const btnHandler = (event) => {
@@ -93,8 +109,13 @@ const ExtractCheckedInputs = (checkbox) => {
 };
 
 
+
+
 // step -1 for each skills data, we are creating elements
-skills.forEach(ConvertDataTOElements);
+// skills.forEach(ConvertDataTOElements);
+
+skills.forEach(ConvertDataTOElementsEX2);
+dropdownContent.appendChild(fragment); // only for EX2
 
 // step -2 🔥 NOW select checkboxes (after they exist)
 const checkboxes = document.querySelectorAll(".dropdown-content input");
