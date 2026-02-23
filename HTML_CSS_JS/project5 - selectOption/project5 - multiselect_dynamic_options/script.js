@@ -9,9 +9,9 @@ const dropdown = document.querySelector(".dropdown");
 const dropdownContent = document.querySelector(".dropdown-content");
 const btn = document.querySelector(".dropdown-btn");
 
-// const checkboxes = document.querySelectorAll(".dropdown-content input"); // return NodeList
 
-skills.forEach(function (skill) {
+// Handlers
+const ConvertDataTOElements = (skill) => {
 
     // 1 Create div wrapper
     const optionDiv = document.createElement("div");
@@ -23,8 +23,9 @@ skills.forEach(function (skill) {
     // 3 Create input
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.value = skill.id;        // ✅ use id
+    checkbox.value = skill.id; // ✅ use id
     checkbox.dataset.name = skill.name; // optional (store name)
+
 
     // 4 Add text node
     const text = document.createTextNode(" " + skill.name); // ✅ use name
@@ -39,25 +40,22 @@ skills.forEach(function (skill) {
     // 7 Append div to dropdown
     dropdownContent.appendChild(optionDiv);
 
-});
-
-// 🔥 NOW select checkboxes (after they exist)
-const checkboxes = document.querySelectorAll(".dropdown-content input");
+};
 
 
-const btnHandler = function (event) {
+
+
+const btnHandler = (event) => {
     // This stops the event from bubbling upward. does NOT go to document - use limited
     // event.stopPropagation();
-
     dropdown.classList.toggle("active");
     console.log("Ran in btn.addEventListener->", dropdown.contains(event.target));
 };
 
 
-const documentHandler = function (event) {
+const documentHandler = (event) => {
     //! This alone will create bug , Only close if click happened OUTSIDE dropdown. so btn click dropdown.contains(event.target) -> false
     // dropdown.classList.remove("active");
-
     console.log("Ran in document.addEventListener->", dropdown.contains(event.target));
 
     if (!dropdown.contains(event.target)) {
@@ -66,38 +64,43 @@ const documentHandler = function (event) {
 
 };
 
+const ExtractCheckedInputs = (checkbox) => {
 
+    checkbox.addEventListener("change", function () {
 
-checkboxes.forEach(
-    function (checkbox) {
+        // Step 1: Get checked checkboxes
+        const checkedBoxes = document.querySelectorAll(
+            ".dropdown-content input:checked"
+        );
 
-        checkbox.addEventListener("change", function () {
+        // Step 2: Convert to array
+        const checkedArray = Array.from(checkedBoxes);
 
-            // Step 1: Get checked checkboxes
-            const checkedBoxes = document.querySelectorAll(
-                ".dropdown-content input:checked"
-            );
-
-            // Step 2: Convert to array
-            const checkedArray = Array.from(checkedBoxes);
-
-            // Step 3: Extract values
-            const selectedValues = checkedArray.map(function (cb) {
-                return cb.value;
-            });
-
-            // Step 4: Update button text
-            if (selectedValues.length > 0) {
-                btn.textContent = selectedValues.join(", ");
-            } else {
-                btn.textContent = "Select Skills";
-            }
-
+        // Step 3: Extract values
+        const selectedValues = checkedArray.map(function (cb) {
+            return cb.value;
         });
 
-    }
-);
+        // Step 4: Update button text
+        if (selectedValues.length > 0) {
+            btn.textContent = selectedValues.join(", ");
+        } else {
+            btn.textContent = "Select Skills";
+        }
 
+    });
+
+};
+
+
+// step -1 for each skills data, we are creating elements
+skills.forEach(ConvertDataTOElements);
+
+// step -2 🔥 NOW select checkboxes (after they exist)
+const checkboxes = document.querySelectorAll(".dropdown-content input");
+
+// for each checkBoxes, we extracting option value to display the checked input, i.e checkboxes
+checkboxes.forEach(ExtractCheckedInputs);
 
 // Close when clicking outside
 document.addEventListener("click", documentHandler);
