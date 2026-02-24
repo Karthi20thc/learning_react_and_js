@@ -24,7 +24,7 @@ const JsonPlaceholder = () => {
 
     return (
         <React.Fragment>
-            {apiresult?.map((ele, index) => {
+            {apiresult?.map((ele) => {
                 return (
                     <div style={{ display: "flex", gap: "10px" }}>
                         <div>Title - {ele.title}</div>
