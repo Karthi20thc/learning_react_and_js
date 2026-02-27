@@ -1,11 +1,11 @@
 /* css */
 
 .progress-container {
-    width: 100%;
+    width: 20%;
     border: 2px solid blue;
     border-radius: 5px;
-    height: 100px;
-    background: linear-gradient(to right, green 0%, white 0%);
+    height: 25px;
+    background: linear-gradient(to right, rgb(0, 51, 128) 0%, white 0%);
 }
 
 /* If progress ≥ 70%, change color to green */
