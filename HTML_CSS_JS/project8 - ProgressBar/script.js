@@ -13,12 +13,17 @@ let intervalID;
 
 const handleProgressColor = (percent, color) => {
 
-    if (percent >= 0 && percent <= 50) {
+    if (percent >= 0 && percent <= 30) {
+        color = 'red'
+        progressContainer.style.background = ` linear-gradient(to right, ${color} ${percent}%, white ${percent}%)`
+        // progressContainer.style.transition = `background 0.5s ease-in-out`
+    }
+    else if (percent >= 31 && percent <= 50) {
         color = 'pink'
         progressContainer.style.background = ` linear-gradient(to right, ${color} ${percent}%, white ${percent}%)`
         // progressContainer.style.transition = `background 0.5s ease-in-out`
     }
-    else if (percent >= 51 && percent <= 80) {
+    else if (percent >= 51 && percent <= 90) {
         color = 'green'
         progressContainer.style.background = ` linear-gradient(to right, ${color} ${percent}%, white ${percent}%)`
         // progressContainer.style.transition = `background 0.5s ease-in-out`
@@ -37,9 +42,9 @@ const handleProgress = (event) => {
         }
 
         // we can play with percent and interval time , for smooth UI progress
-        percent = percent + 0.5;
+        percent = percent + 1;
         handleProgressColor(percent, color);
-    }, 10)
+    }, 1000)
 
 
 
