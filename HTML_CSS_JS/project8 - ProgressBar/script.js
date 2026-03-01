@@ -44,7 +44,7 @@ const handleProgress = (event) => {
         // we can play with percent and interval time , for smooth UI progress
         percent = percent + 1;
         handleProgressColor(percent, color);
-    }, 1000)
+    }, 100)
 
 
 

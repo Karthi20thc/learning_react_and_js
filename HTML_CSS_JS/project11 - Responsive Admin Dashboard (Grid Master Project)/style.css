@@ -1,0 +1,109 @@
+/* css */
+
+/* Main Grid Layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 70px 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    background: #1e293b;
+    color: white;
+}
+
+.header {
+    background: #0f172a;
+    color: white;
+}
+
+.main {
+    padding: 20px;
+}
+
+
+
+/* Nested Grid for Cards */
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+    gap: 20px;
+}
+
+.card {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+
+.chart {
+    grid-column: span 2;
+    background: #cbd5f5;
+}
+
+.table {
+    grid-column: span 3;
+    background: #fde68a;
+}
+
+
+/* Advanced Responsive Grid */
+
+
+@media (max-width: 900px) {
+    .main {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+
+/* Using Grid Areas (Interview Favorite) */
+
+/* .dashboard {
+    display: grid;
+
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 70px 1fr;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.dashboard {
+    display: grid;
+
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 70px 1fr;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+} */

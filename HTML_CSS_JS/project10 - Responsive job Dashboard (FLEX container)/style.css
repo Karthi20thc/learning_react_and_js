@@ -1,0 +1,106 @@
+/* css */
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+
+    /* Aligns flex items along the main axis of the current line of the flex container. */
+    justify-content: space-between;
+
+    /* Aligns flex items along the cross axis of the current line of the flex container. */
+    align-items: center;
+
+    padding: 15px 30px;
+    background: #1e293b;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+
+/* SIDEBAR - .container first child */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #f1f5f9;
+
+    /* Sets the flex basis. */
+    flex-basis: 200px;
+
+    /* Sets the flex shrink factor. Negative numbers are invalid. */
+    flex-shrink: 0;
+}
+
+/* MAIN CONTENT .container second child */
+.main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+
+    /* Controls whether the flex container is single-line or multi-line, and the direction of the cross-axis, which determines the direction new lines are stacked in. */
+    flex-wrap: wrap;
+    gap: 20px;
+
+    /* Aligns a flex container's lines within the flex container when there is extra space in the cross-axis, similar to how 'justify-content' aligns individual items within the main-axis. */
+    align-content: flex-start;
+}
+
+/* flex-item to .cards */
+.card {
+    /* grow shrink basis */
+    flex: 1 1 200px;
+    background: #e2e8f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+/* Featured card */
+.featured {
+    order: -1;
+    align-self: stretch;
+    background: #38bdf8;
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: #1e293b;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        /* Specifies how flex items are placed in the flex container, by setting the direction of the flex container's main axis. */
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <header class="header">
+            <div class="logo">JobPortal</div>
+            <nav class="nav">
+                <a>Home</a>
+                <a>Jobs</a>
+                <a>Profile</a>
+            </nav>
+        </header>
+
+        <!-- .container {
+        display: flex;
+        min-height: 80vh;
+        } -->
+        <div class="container">
+            <!-- .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background: #f1f5f9;
+            flex-basis: 200px;
+            flex-shrink: 0;
+            } -->
+            <aside class="sidebar">
+                <div>Dashboard</div>
+                <div>Applications</div>
+                <div>Settings</div>
+            </aside>
+
+            <!-- .main {
+            flex-grow: 1;
+            padding: 20px;
+            } -->
+            <main class="main">
+                <!-- .cards {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                align-content: flex-start;
+                } -->
+                <div class="cards">
+                    <!-- .card {
+                    flex: 1 1 200px;
+                    /* grow shrink basis */
+                    background: #e2e8f0;
+                    padding: 20px;
+                    text-align: center;
+                    border-radius: 8px;
+                    } -->
+
+
+                    <!-- .featured {
+                    order: -1;
+                    align-self: stretch;
+                    background: #38bdf8;
+                    color: white;
+                    } -->
+                    <div class="card featured">Frontend Dev</div>
+                    <div class="card">Backend Dev</div>
+                    <div class="card">UI Designer</div>
+                    <div class="card">DevOps</div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">© 2026 JobPortal</footer>
+    </body>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
