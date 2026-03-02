@@ -184,3 +184,9 @@ event.target.value
 * `element.textContent`
 
 If interviewer asks this, tell me — I’ll prepare you with a tricky example 😎
+
+
+# Learning 3
+
+console.log(Date.now());  1772436220451
+console.log( new Date().toLocaleString()) 3/2/2026, 7:23:40 AM
