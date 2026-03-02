@@ -45,7 +45,7 @@ const TODO = () => {
         setTodoData(() => todoData.filter((e) => id != e.id))
     }
     const handleCompleteStatus = (bool_value, id) => {
-        console.log(bool_value, id);
+        // console.log(bool_value, id);
 
         // todoData.find((e) => e.id = id)
         // console.log((todoData.find((e) => e.id === id)))
