@@ -1,0 +1,30 @@
+.formContainer {
+    width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.eachForm {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.errorInput {
+    border: 2px solid red;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
