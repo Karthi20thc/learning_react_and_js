@@ -1,0 +1,10 @@
+.formContainer {
+    width: 20%;
+}
+
+.eachForm {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 3px;
+}

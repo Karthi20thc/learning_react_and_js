@@ -3,6 +3,7 @@ import { Table } from 'antd';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
+import styles from './styles.module.css'
 
 const SimpleTableAntd = () => {
 
@@ -23,6 +24,8 @@ const SimpleTableAntd = () => {
     //         address: '10 Downing Street',
     //     },
     // ];
+
+
 
     const columns = [
         {
@@ -46,9 +49,11 @@ const SimpleTableAntd = () => {
             title: 'Status',
             dataIndex: 'completed',
             key: 'completed',
+            //  className={text ? styles.green : styles.red}
             render: (text, record, index) => {
-                return (<div>{String(text)}</div>)
+                return (<div className={`${text === true ? styles.green : styles.red}`} >{String(text)}</div>)
             }
+
         },
     ];
 
