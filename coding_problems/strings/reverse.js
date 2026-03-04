@@ -9,4 +9,4 @@ const reverse = (str) => {
     return rev;
 }
 
-console.log(reverse("abcd"));
+console.log(reverse("abcd efg"));
