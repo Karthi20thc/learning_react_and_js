@@ -4,6 +4,7 @@ import SimpleFormOnSubmitValidation from "./mini_projects/Forms/HTML_CSS_JS/simp
 import SimpleFormRealTimeValidations from "./mini_projects/Forms/HTML_CSS_JS/simpleForm_realTimeValidations_onBlur_onFocus/simpleFormRealTimeValidations"
 import JsonPlaceholder from "./mini_projects/JSONplaceholder/JSONplaceholder"
 import JsonPlaceholderRedux from "./mini_projects/JSONplaceholder_with_redux/JsonPlaceholderRedux"
+import RealTImeSearch from "./mini_projects/RealTimeSearch/RealTImeSearch"
 import SimpleTableAntd from "./mini_projects/Table/antd/Table/SimpleTableAntd"
 import TODO from "./mini_projects/TODO/TODO"
 // import Timer from "./mini_projects/Timer/Timer"
@@ -23,7 +24,8 @@ function App() {
       {/* <SimpleForm /> */}
       {/* <SimpleFormOnSubmitValidation /> */}
       {/* <SimpleFormRealTimeValidations /> */}
-      <DebounceInput />
+      {/* <DebounceInput /> */}
+      <RealTImeSearch />
     </>
   )
 }
