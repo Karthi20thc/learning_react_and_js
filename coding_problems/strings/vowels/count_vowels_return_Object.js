@@ -32,14 +32,14 @@ const countVowels = (str) => {
         if (obj[char]) {
             obj[char] = obj[char] + 1
         }
-        else {
-            obj[char] = 0
+        else if (vowels.includes(char)) {
+            obj[char] = 1
         }
     }
 
     return obj
 }
 
-console.log(countVowels("aees"))
+console.log(countVowels("aaaees"))
 
 // expected output - {a:1,e:2}
