@@ -22,7 +22,8 @@ function App() {
       {/* <SimpleFormAntd /> */}
       {/* <SimpleForm /> */}
       {/* <SimpleFormOnSubmitValidation /> */}
-      <SimpleFormRealTimeValidations />
+      {/* <SimpleFormRealTimeValidations /> */}
+      <DebounceInput />
     </>
   )
 }
