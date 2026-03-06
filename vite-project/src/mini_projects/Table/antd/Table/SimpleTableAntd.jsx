@@ -32,7 +32,10 @@ const SimpleTableAntd = () => {
             title: 'ID',
             dataIndex: 'id',
             key: 'id',
-            render: (text, record, index) => {
+            render: (text,
+                // record,
+                // index
+            ) => {
                 return (<div>{text}</div>)
             }
 
@@ -41,7 +44,10 @@ const SimpleTableAntd = () => {
             title: 'Title',
             dataIndex: 'title',
             key: 'title',
-            render: (text, record, index) => {
+            render: (text,
+                // record,
+                // index
+            ) => {
                 return (<div>{text}</div>)
             }
         },
@@ -50,7 +56,10 @@ const SimpleTableAntd = () => {
             dataIndex: 'completed',
             key: 'completed',
             //  className={text ? styles.green : styles.red}
-            render: (text, record, index) => {
+            render: (text,
+                // record,
+                // index
+            ) => {
                 return (<div className={`${text === true ? styles.green : styles.red}`} >{String(text)}</div>)
             }
 
