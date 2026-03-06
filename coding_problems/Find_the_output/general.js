@@ -1,0 +1,1 @@
+console.log(223 % 2 === 0) // true
