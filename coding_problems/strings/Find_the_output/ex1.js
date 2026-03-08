@@ -15,4 +15,5 @@ console.log(firstChar);
 
 let str3 = "hello";
 let result = str3[0].toUpperCase();
-console.log(result); 
+console.log(result);
+
