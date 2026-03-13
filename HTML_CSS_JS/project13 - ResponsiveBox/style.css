@@ -1,0 +1,56 @@
+/* css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile first */
+.parent-box-13 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.parent-box-13 div {
+    /* background: #4CAF50; */
+    border: 0.5px solid red;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .parent-box-13 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .parent-box-13 div {
+        flex: 1 1 45%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+    .parent-box-13 {
+        justify-content: center;
+    }
+
+    .parent-box-13 div {
+        flex: 1 1 30%;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1440px) {
+    .parent-box-13 {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
