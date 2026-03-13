@@ -10,16 +10,16 @@ public class UsingTwoPointers {
         // two pointers
         int i = 0;
         //  we have to use length only for array not arraylist
-        int j = arr.size()-1;
+        int j = arr.size();
         // System.out.println(j);
 
         while( i < j){
             char temp = arr.get(i);
 
-            // set j value to i
+            // set j to i
             arr.set(i, arr.get(j));
 
-            //set  i(temp) to j
+            //set j
             arr.set(j, temp);
 
             // System.out.println(temp);

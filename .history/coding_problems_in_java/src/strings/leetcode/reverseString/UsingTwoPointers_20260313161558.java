@@ -5,26 +5,16 @@ import java.util.List;
 
 public class UsingTwoPointers {
     // This is were the function is called
-   public static ArrayList<Character> solution(ArrayList<Character> arr){
+   public static ArrayList<String> solution(ArrayList<String> arr){
 
         // two pointers
         int i = 0;
         //  we have to use length only for array not arraylist
-        int j = arr.size()-1;
+        int j = arr.size();
         // System.out.println(j);
 
         while( i < j){
             char temp = arr.get(i);
-
-            // set j value to i
-            arr.set(i, arr.get(j));
-
-            //set  i(temp) to j
-            arr.set(j, temp);
-
-            // System.out.println(temp);
-            i++;
-            j--;
         }
 
 
@@ -32,7 +22,7 @@ public class UsingTwoPointers {
     }
 
     public static void main(String[] args) {
-        ArrayList<Character> myArr = new ArrayList<>(List.of('h', 'e', 'l', 'l', 'o'));
+        ArrayList<String> myArr = new ArrayList<>(List.of("h", "e", "l", "l", "o"));
         System.out.println(solution(myArr));
     }
 }

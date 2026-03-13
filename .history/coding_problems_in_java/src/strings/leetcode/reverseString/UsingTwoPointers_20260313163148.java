@@ -16,10 +16,10 @@ public class UsingTwoPointers {
         while( i < j){
             char temp = arr.get(i);
 
-            // set j value to i
+            // set j to i
             arr.set(i, arr.get(j));
 
-            //set  i(temp) to j
+            //set j to i(temp)
             arr.set(j, temp);
 
             // System.out.println(temp);
