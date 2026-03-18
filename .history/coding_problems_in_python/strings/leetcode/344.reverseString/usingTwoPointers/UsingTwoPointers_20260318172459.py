@@ -1,7 +1,7 @@
 class Solution:
 
     def reverseString(self, arr):
-        # print(self)
+        print(self)
 
         leftIndex = 0
         rightIndex = len(arr) - 1
