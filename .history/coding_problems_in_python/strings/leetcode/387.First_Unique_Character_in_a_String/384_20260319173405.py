@@ -18,6 +18,6 @@ def solution(mystr: str) -> int:
     
     return -1
 
-s = "loveleetcode"
-# s = "aabb"
+# s = "loveleetcode"
+s = "aabb"
 print(solution(s))
