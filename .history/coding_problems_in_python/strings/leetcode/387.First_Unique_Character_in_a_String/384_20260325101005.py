@@ -24,4 +24,4 @@ print(solution(s))
 
 
 test = "hello"
-print(test.index("l"))  # 2
+print(test.index("l"))

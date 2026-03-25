@@ -7,8 +7,7 @@ def solution(mystr) -> bool:
         if(mystr[leftIndex] != mystr[rightIndex]):
             return False
         
-        # leftIndex+=1
-        leftIndex = leftIndex + 1
+        leftIndex+=1
         rightIndex-=1
 
     return True
