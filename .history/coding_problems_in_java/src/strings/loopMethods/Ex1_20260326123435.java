@@ -1,6 +1,6 @@
 package strings.loopMethods;
 
-import strings.frequency.Frequency;
+import strings.frequency.Frequency;;
 
 
 public class Ex1 {

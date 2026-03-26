@@ -1,7 +1,6 @@
 package strings.loopMethods;
 
-import strings.frequency.Frequency;
-
+import strings.frequency.CharFrequency;
 
 public class Ex1 {
 
@@ -33,7 +32,7 @@ public class Ex1 {
         // using other class methods here...
         //! WRONG --> System.out.println(CharFrequency("kkart"));
         // CORRECT
-        System.out.println(Frequency.charFrequency("kkart"));
+        System.out.println(CharFrequency.charFrequency("kkart"));
 
     }
 }

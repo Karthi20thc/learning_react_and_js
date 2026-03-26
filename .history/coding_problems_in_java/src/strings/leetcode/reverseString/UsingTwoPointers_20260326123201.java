@@ -5,7 +5,7 @@ import java.util.List;
 
 public class UsingTwoPointers {
     // This is were the function is called
-   public static ArrayList<Character> solution(ArrayList<Character> arr){
+   public static ArrayList<Character> reverseArray(ArrayList<Character> arr){
 
         // two pointers
         int i = 0;
@@ -31,8 +31,30 @@ public class UsingTwoPointers {
         return arr;
     }
 
+      //  Two pointer
+    public static StringBuilder reverseString(String str) {
+        StringBuilder mystr = new StringBuilder(str);
+        int lpi = 0;
+        int rpi = mystr.length()-1;
+
+        while (lpi < rpi) {
+            char temp = mystr.charAt(lpi);
+
+            mystr.setCharAt(lpi, mystr.charAt(rpi));
+            mystr.setCharAt(rpi, temp);
+
+            lpi++;
+            rpi--;
+        }
+
+        return mystr;
+    }
+
+
     public static void main(String[] args) {
         ArrayList<Character> myArr = new ArrayList<>(List.of('h', 'e', 'l', 'l', 'o'));
-        System.out.println(solution(myArr));
+        System.out.println(reverseArray(myArr));
+
+        System.out.println(reverseString("hello"));
     }
 }
