@@ -1,4 +1,7 @@
+package strings.leetcode.HashMap.FirstUniqueChar;
+
 import java.util.HashMap;
+import strings.leetcode.HashMap.frequency.Frequency;
 
 public class FirstUniqueChar {
     public static void main(String[] args) {
