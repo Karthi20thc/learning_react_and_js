@@ -1,34 +1,18 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
             "type": "java",
-            "name": "RemoveDuplicatesFromSortedArray",
+            "name": "FirstUniqueChar",
             "request": "launch",
-            "mainClass": "strings.leetcode.TwoPointers.removeDuplicatesSortedArray.RemoveDuplicatesFromSortedArray",
+            "mainClass": "leetcode.HashMap.FirstUniqueChar.FirstUniqueChar",
             "projectName": "learning_react_and_js_788a139b"
         },
         {
             "type": "java",
-            "name": "FirstUniqueChar",
+            "name": "Debug Current File",
             "request": "launch",
-            "mainClass": "FirstUniqueChar",
-            "projectName": "learning_react_and_js_7fa0aeaf"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "strings.leetcode.TwoPointers.palindrome.Main",
-            "projectName": "learning_react_and_js_7fa0aeaf"
-        },
-        {
-            "type": "jdk",
-            "request": "launch",
-            "name": "Launch Java App"
+            "mainClass": "${file}"
         }
     ]
 }

@@ -1,4 +1,4 @@
-package strings.leetcode.HashMap.frequency;
+package leetcode.HashMap.frequency;
 
 import java.util.HashMap;
 

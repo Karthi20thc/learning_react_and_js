@@ -1,3 +1,5 @@
+package leetcode.HashMap.frequency;
+
 import java.util.HashMap;
 
 public class Frequency {
