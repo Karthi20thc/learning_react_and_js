@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "leetcode.TwoPointers.moveZeros.Main",
+            "projectName": "learning_react_and_js_788a139b"
+        },
+        {
+            "type": "java",
             "name": "FirstUniqueChar",
             "request": "launch",
             "mainClass": "leetcode.HashMap.FirstUniqueChar.FirstUniqueChar",
