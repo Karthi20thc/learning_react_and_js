@@ -20,7 +20,7 @@ public class Main {
             if (nums[fast] == 0) {
                 fast++;
             } else {
-                // making a copy of nums[slow], because nums[slow] will be overwritten on nums[fast] next step
+                // making a copy of nums[slow], because nums[fast] will be overwritten on nums[slow] next step
                 int temp = nums[slow];
                 nums[slow] = nums[fast];
                 nums[fast] = temp;
