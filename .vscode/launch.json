@@ -5,6 +5,20 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "leetcode.HashMap.twoSum.Main",
+            "projectName": "learning_react_and_js_788a139b"
+        },
+        {
+            "type": "java",
+            "name": "MoveZerosAnimation",
+            "request": "launch",
+            "mainClass": "leetcode.TwoPointers.moveZeros.MoveZerosAnimation",
+            "projectName": "learning_react_and_js_788a139b"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "leetcode.TwoPointers.moveZeros.Main",
             "projectName": "learning_react_and_js_788a139b"
         },
