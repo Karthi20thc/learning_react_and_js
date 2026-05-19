@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UsefullArrayListMethods",
+            "request": "launch",
+            "mainClass": "Learnings.ArrayList.UsefullArrayListMethods",
+            "projectName": "learning_react_and_js_788a139b"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "leetcode.HashMap.twoSum.Main",
