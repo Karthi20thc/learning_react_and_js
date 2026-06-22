@@ -155,4 +155,4 @@ I can also explain:
 * DOMContentLoaded vs load
 * Browser rendering process
 
-Just tell me 👍
+Just tell me. 👍
