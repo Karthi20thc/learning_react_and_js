@@ -42,7 +42,7 @@ This is called **render blocking**.
 
 * DOM manipulation
 * Main application scripts
-* Most frontend projects
+* Most frontend projects.
 
 ---
 
