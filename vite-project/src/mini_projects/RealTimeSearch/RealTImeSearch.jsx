@@ -12,7 +12,7 @@ const RealTImeSearch = () => {
         if (!userValue) return setData(countries)
 
         const searchFilter = data.filter((e) => {
-            if (e.includes(userValue)) {
+            if (e.toLowerCase().includes(userValue.toLowerCase())) {
                 return e
             }
 

@@ -2,6 +2,7 @@ import SimpleFormAntd from "./mini_projects/Forms/antd/simpleForm/SimpleFormAntd
 import SimpleForm from "./mini_projects/Forms/HTML_CSS_JS/simpleForm/SimpleForm"
 import SimpleFormOnSubmitValidation from "./mini_projects/Forms/HTML_CSS_JS/simpleForm_onSubmit_runValidations/SimpleFormOnSubmitValidation"
 import SimpleFormRealTimeValidations from "./mini_projects/Forms/HTML_CSS_JS/simpleForm_realTimeValidations_onBlur_onFocus/simpleFormRealTimeValidations"
+import Formp1 from "./mini_projects/Forms/practice/Formp1"
 import JsonPlaceholder from "./mini_projects/JSONplaceholder/JSONplaceholder"
 import JsonPlaceholderRedux from "./mini_projects/JSONplaceholder_with_redux/JsonPlaceholderRedux"
 import RealTImeSearch from "./mini_projects/RealTimeSearch/RealTImeSearch"
@@ -25,7 +26,8 @@ function App() {
       {/* <SimpleFormOnSubmitValidation /> */}
       {/* <SimpleFormRealTimeValidations /> */}
       {/* <DebounceInput /> */}
-      <RealTImeSearch />
+      {/* <RealTImeSearch /> */}
+      <Formp1 />
     </>
   )
 }
