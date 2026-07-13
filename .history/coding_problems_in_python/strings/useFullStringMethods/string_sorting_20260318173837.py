@@ -1,1 +1,0 @@
-print(sorted("Try programiz.pro"))

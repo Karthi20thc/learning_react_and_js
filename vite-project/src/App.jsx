@@ -1,3 +1,5 @@
+import UseCallbackExample from "./document/Hooks/UseCallbackExample"
+import UseMemoExample from "./document/Hooks/UseMemoExample"
 import SimpleFormAntd from "./mini_projects/Forms/antd/simpleForm/SimpleFormAntd"
 import SimpleForm from "./mini_projects/Forms/HTML_CSS_JS/simpleForm/SimpleForm"
 import SimpleFormOnSubmitValidation from "./mini_projects/Forms/HTML_CSS_JS/simpleForm_onSubmit_runValidations/SimpleFormOnSubmitValidation"
@@ -27,7 +29,9 @@ function App() {
       {/* <SimpleFormRealTimeValidations /> */}
       {/* <DebounceInput /> */}
       {/* <RealTImeSearch /> */}
-      <Formp1 />
+      {/* <Formp1 /> */}
+      {/* <UseMemoExample /> */}
+      <UseCallbackExample />
     </>
   )
 }
